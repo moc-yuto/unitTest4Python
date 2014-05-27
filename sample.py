@@ -26,5 +26,9 @@ class TestSequenceFunctions(unittest.TestCase):
         for element in random.sample(self.seq, 5):
             self.assertTrue(element in self.seq)
 
+    def test_choice(self):
+        element = 1
+        self.assertTrue(element in self.seq)
+
 if __name__ == '__main__':
     unittest.main()
